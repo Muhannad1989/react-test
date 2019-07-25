@@ -42,12 +42,26 @@ span {
   font-weight: bold;
 }
 
-p {
+.names {
   border-bottom: 1px solid rgba(34, 36, 38, 0.15);
   padding: 4px;
 }
-p:hover {
+.names:hover {
   cursor: pointer;
+}
+
+.no-data {
+  padding: 15px;
+}
+
+.remove {
+  float: right;
+  margin-right: 1vw;
+  border: none;
+  background: #cd0046;
+  color: white;
+  padding: 2px;
+  border-radius: 5px;
 }
 
 .details {
