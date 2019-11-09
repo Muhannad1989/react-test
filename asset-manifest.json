@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/github.io/react-test-deployment/static/css/main.557cc00b.chunk.css",
+    "main.js": "/github.io/react-test-deployment/static/js/main.43dedd3b.chunk.js",
+    "main.js.map": "/github.io/react-test-deployment/static/js/main.43dedd3b.chunk.js.map",
+    "runtime~main.js": "/github.io/react-test-deployment/static/js/runtime~main.6052d8c2.js",
+    "runtime~main.js.map": "/github.io/react-test-deployment/static/js/runtime~main.6052d8c2.js.map",
+    "static/js/2.97294558.chunk.js": "/github.io/react-test-deployment/static/js/2.97294558.chunk.js",
+    "static/js/2.97294558.chunk.js.map": "/github.io/react-test-deployment/static/js/2.97294558.chunk.js.map",
+    "index.html": "/github.io/react-test-deployment/index.html",
+    "precache-manifest.db07f5b64d0deca35a6fdfb0e0514064.js": "/github.io/react-test-deployment/precache-manifest.db07f5b64d0deca35a6fdfb0e0514064.js",
+    "service-worker.js": "/github.io/react-test-deployment/service-worker.js",
+    "static/css/main.557cc00b.chunk.css.map": "/github.io/react-test-deployment/static/css/main.557cc00b.chunk.css.map"
+  }
+}
