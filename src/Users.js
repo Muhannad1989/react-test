@@ -17,7 +17,7 @@ const List = ({ surname, gender, region, email, age }) => {
 const Image = ({ photo }) => {
   return (
     <React.Fragment>
-      <img src={photo} alt="" />
+      <img className="avatar" src={photo} alt="" />
     </React.Fragment>
   );
 };
@@ -76,13 +76,19 @@ class Users extends Component {
   };
 
   render() {
-    const { loading, error, allUser, selectedUser, displayBox } = this.state;
+    const {
+      loading,
+      error,
+      allUser,
+      selectedUser: { photo, surname, region, gender, email, age },
+      displayBox,
+    } = this.state;
     if (loading) {
       return <div className="loading">Loading...</div>;
     }
 
     if (error) {
-      return <div className="error">Opps something went wrong</div>;
+      return <div className="error">Oops something went wrong</div>;
     }
 
     return (
@@ -92,21 +98,15 @@ class Users extends Component {
         </div>
         <div className="parent">
           {this.state.allUser.length === 0 ? (
-            <div className="no-data">there is no dara ...</div>
+            <div className="no-data">there is no data ...</div>
           ) : (
             ''
           )}
-          <div>
+          <div className="details">
             {displayBox > false ? (
-              <div className="details">
-                <Image photo={selectedUser.photo} />
-                <List
-                  surname={selectedUser.surname}
-                  region={selectedUser.region}
-                  gender={selectedUser.gender}
-                  email={selectedUser.email}
-                  age={selectedUser.age}
-                />
+              <div className="details-child">
+                <Image photo={photo} />
+                <List surname={surname} region={region} gender={gender} email={email} age={age} />
               </div>
             ) : null}
           </div>
